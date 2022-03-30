@@ -1,4 +1,5 @@
 This package contains the code of the deblurring algorithm described in the paper: 
+
 Jiawei Zhang, Jinshan Pan, Daoye Wang, Shangchen Zhou, Xing Wei, Furong Zhao, Jianbo Liu, Jimmy Ren, "Deep Dynamic Scene Deblurring from Optical Flow", TCSVT. 
 
 how to use:
