@@ -30,7 +30,7 @@ You can download the experimental results of DVD from the proposed network and o
 
 2018 CVPR Tao: https://pan.baidu.com/s/15qIbzw-XRBPfgb_in8G0OA?pwd=j3i9 (password: j3i9)
 
-2018 CVPR Zhang: https://pan.baidu.com/s/1XpQxjOnVHQGbOxonmU-PKA?pwd=apng (password: apng)
+2018 CVPR Zhang: https://pan.baidu.com/s/12Rhf3_pkeW05T5k4q1xFbg?pwd=9gwv (password: 9gwv)
 
 2015 CVPR Kim: https://pan.baidu.com/s/1rIJL7HnDCx_5ZcdwpsuTNQ?pwd=4nzq (password: 4nzq)
 
