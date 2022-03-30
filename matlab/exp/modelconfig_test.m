@@ -10,7 +10,7 @@ else
     Solver = SolverParser(solver_file);
 end
 
-Solver.iter = 628000;
+Solver.iter = 1060000;
 
 if isfield(Solver, 'snapshot_prefix')
     if isfield(Solver, 'iter')

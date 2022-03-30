@@ -4,7 +4,7 @@ addpath('../');
 
 caffe.reset_all()
 
-datapath = './';
+datapath = '/pathtodata/';
 
 folderlist = {'720p_240fps_2','IMG_0003','IMG_0021','IMG_0030','IMG_0031','IMG_0032','IMG_0033','IMG_0037','IMG_0039','IMG_0049'};
 

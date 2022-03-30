@@ -6,7 +6,6 @@ warning off
 % parpool('local', 10);
 
 addpath('../');
-% addpath('PSF_generation');
 caffe.reset_all()
 
 model_path = 'model/';

@@ -4,9 +4,18 @@ addpath('../');
 
 caffe.reset_all()
 
-datapath = './';
-src = im2single(imread(fullfile(datapath, '00008.jpg')));
-dst = im2single(imread(fullfile(datapath, '00009.jpg')));
+datapath = '/pathtodata/';
+src = im2single(imread(fullfile(datapath, '00080.jpg')));
+dst = im2single(imread(fullfile(datapath, '00081.jpg')));
+
+[h,w,~] = size(src);
+if(h>w)
+    src = permute(src,[2,1,3]);
+    dst = permute(dst,[2,1,3]);
+end
+
+src = src + randn(size(src))*0.05;
+dst = dst + randn(size(src))*0.05;
 
 src = [src; zeros(48,1280,3)];
 dst = [dst; zeros(48,1280,3)];
@@ -27,6 +36,10 @@ toc
 active = activec{1};
 active = active(1:720,:,:);
 
+if(h>w)
+    active = permute(active,[2,1,3]);
+end
+
 % imwrite([src], 'blur.png')
 imwrite([active], 'deblur.png')
 
@@ -37,3 +50,5 @@ imwrite([active], 'deblur.png')
 % imwrite(flow1, 'flow1.png')
 % imwrite(flow2, 'flow2.png')
 
+
+%features = Solver.Solver_.net.get_data();

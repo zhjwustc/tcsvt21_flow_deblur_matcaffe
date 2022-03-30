@@ -3,7 +3,7 @@ Solver.patchsize = 256;
 Solver.batchsize = 10;
 %%% not all the data are used for training
 
-Solver.datapath = './'; 
+Solver.datapath = '/pathtodata/'; 
 Solver.srcfolder = 'SrcInput';
 Solver.dstfolder = 'DstInput';
 Solver.cleanfolder = 'SrcGt';

@@ -7,6 +7,7 @@ rng('shuffle');
 idpool = randperm(Solver.data.train_num);
 for count = 1:Solver.batchsize
     idx = idpool(count);
+    Solver.data.trainlst{idx}.src
     src = im2single(imread(Solver.data.trainlst{idx}.src));
     dst = im2single(imread(Solver.data.trainlst{idx}.dst));
     clean = im2single(imread(Solver.data.trainlst{idx}.clean));

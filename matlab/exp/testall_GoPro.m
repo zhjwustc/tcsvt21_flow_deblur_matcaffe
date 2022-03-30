@@ -6,7 +6,7 @@ caffe.reset_all()
 
 datapath = '/pathtodata/';
 
-folderlist = {'bicycle','books','bridge','car','street'};
+folderlist = {'GOPR0881_11_01','GOPR0871_11_00','GOPR0869_11_00','GOPR0868_11_00','GOPR0862_11_00','GOPR0854_11_00','GOPR0410_11_00','GOPR0396_11_00','GOPR0385_11_01','GOPR0384_11_05','GOPR0384_11_00'};
 
 model_path = 'model/';
 
@@ -15,11 +15,11 @@ Solver = modelconfig_test(model_path);
 mkdir('results');
 
 for i=1:length(folderlist)
-    imlist = dir(fullfile(datapath, folderlist{i}, '*.jpg'));
+    imlist = dir(fullfile(datapath, folderlist{i}, 'blur', '*.png'));
     mkdir(fullfile('results', folderlist{i}))
-   for j=1:length(imlist)-1
-        src = im2single(imread(fullfile(datapath, folderlist{i}, imlist(j).name)));
-        dst = im2single(imread(fullfile(datapath, folderlist{i}, imlist(j+1).name)));
+    for j=1:length(imlist)-1
+        src = im2single(imread(fullfile(datapath, folderlist{i}, 'blur', imlist(j).name)));
+        dst = im2single(imread(fullfile(datapath, folderlist{i}, 'blur', imlist(j+1).name)));
         
         [h,w,~] = size(src);
         if(h>w)
@@ -48,7 +48,4 @@ for i=1:length(folderlist)
         imwrite([active], fullfile('results', folderlist{i}, [imlist(j).name(1:end-4), '.png']))
     end
 end
-
-
-
 
