@@ -6,7 +6,7 @@ how to use:
 
 ./matlab/exp/train.m can be used to train the network
 
-/matlab/exp/test.m or testall.m can be used to test
+./matlab/exp/test.m or testall.m can be used to test
 
 caffemodel can be downloaded from:
 googledrive: https://drive.google.com/drive/folders/1g6-1u22jScxI0vT78ObRRnZBP9VypDqH?usp=sharing
